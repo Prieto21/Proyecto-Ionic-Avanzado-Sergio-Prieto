@@ -1,0 +1,64 @@
+<ion-header>
+  <!-- <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>  -->
+
+  <ion-toolbar>
+
+
+
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+
+        <ion-col>
+          <ion-header>
+            <ion-title>Louvre</ion-title>
+
+          </ion-header>
+          <br>
+          <ion-segment value="Login">
+            <ion-segment-button value="Login">
+              center
+            </ion-segment-button>
+            <ion-segment-button value="Registro" [routerLink]="['/registrar']">
+              Registro
+            </ion-segment-button>
+          </ion-segment>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card class="login">
+    <ion-item style="background-color:rgba(255, 255, 255, 0.808);">
+
+      <ion-label style="display: flex; justify-content: center; font-size: 45px; background-color: rgba(255, 255, 255, 0.808);">LOGIN</ion-label>
+
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item style="background-color: rgba(255, 255, 255, 0.808);">
+        <ion-label position="floating">
+          <ion-icon name="person-circle-outline"></ion-icon> Usuario
+        </ion-label>
+        <ion-input placeholder="Ingrese Usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          <ion-icon name="lock-closed-outline"></ion-icon> Contraseña
+        </ion-label>
+        <ion-input placeholder="Ingrese Contraseña"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button expand="block" class="botonBienv" [routerLink]="['/home']" color="trasparent">
+        <p style="color: black; font-size: 20px;">Entrar</p>
+      </ion-button>
+      <!-- <a [routerLink]="['/registrar']">No tengo cuenta</a> -->
+    </ion-card-content>
+  </ion-card>
+</ion-content>

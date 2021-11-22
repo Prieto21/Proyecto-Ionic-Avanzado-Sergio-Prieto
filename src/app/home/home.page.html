@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title>
+      Louvre 
+      
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="background">
+  <h1 style="color: white; display: flex; justify-content: center; font-size:30px ;">Museo De Arte</h1>
+  <!-- CLASE -->
+  <ion-card class="infoclas" *ngFor="let task of tasks">
+    
+    <ion-card-header>
+      <ion-card-title style="font-size: 15px;display: flex; color: rgb(78, 77, 77); justify-content: center; text-align: center;">{{task.title}}</ion-card-title>
+      <hr style="background-color: black;">
+      <img src="{{task.url}}">
+      
+      
+      
+      <hr style="background-color: black;">
+      <ion-card-subtitle>Album De Arte Numero:{{task.albumId}}</ion-card-subtitle>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <hr>
+
+      <ion-button expand="block" class="infooo"  (click)="alertInfor()" color="trasparent"> <ion-icon style="color: rgb(119, 119, 119);" name="thumbs-up-outline"></ion-icon> </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <!-- CLASE -->
+
+
+
+  <!-- <h1 style="color:white" class="ion-text-center">Los Mejores Carros</h1>
+  <ion-card *ngFor=" let info of arrayElementos ; let numeracion = index">
+    <ion-card-header>
+      <img src="{{info.imagen}}">
+      <hr>
+      <ion-card-title>{{info.producto}}</ion-card-title>
+
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-card-subtitle>Precio: {{info.precio}}</ion-card-subtitle>
+ 
+      <ion-button color="warning" expand="block" shape="round" fill="outline" (click)="alertInfor(info)">
+        Ver Descripción<ion-icon name="eye-outline"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+
+   
+  </ion-card> -->
+
+
+
+ 
+</ion-content>

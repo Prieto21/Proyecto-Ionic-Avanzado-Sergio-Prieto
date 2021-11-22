@@ -1,0 +1,79 @@
+<ion-header>
+  <!-- <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>  -->
+
+  <ion-toolbar>
+
+
+
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+
+        <ion-col>
+          <ion-header>
+            <ion-title>Louvre</ion-title>
+
+          </ion-header>
+          <br>
+          <ion-segment value="Registro">
+            <ion-segment-button value="Login" [routerLink]="['/login']">
+              Login
+            </ion-segment-button>
+            <ion-segment-button value="Registro" >
+              Registro
+            </ion-segment-button>
+          </ion-segment>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card>
+    <ion-item>
+
+      <ion-label style="display: flex; justify-content: center; font-size: 35px;">REGISTRO</ion-label>
+
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nombre & Apellidos</ion-label>
+        <ion-input placeholder="Ingrese Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input placeholder="Ingrese Usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input placeholder="Ingrese Contraseña"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Gmail</ion-label>
+        <ion-input placeholder="Ingrese Gmail"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Edad</ion-label>
+        <ion-input placeholder="Ingrese Edad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sexo</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="M">Mujer</ion-select-option>
+          <ion-select-option value="H">Hombre</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-button expand="block" class="botonBienvdos" [routerLink]="['/home']" color="trasparent">
+        <p style="color: black; font-size: 25px;">Crear</p>
+      </ion-button>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

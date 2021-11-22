@@ -1,0 +1,95 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.centrar{
+
+text-align: center;
+  }
+  .background{
+    --background: url(../src/assets/imagenes/fondo.jpg) 0 0/100% 100% no-repeat;
+   
+}
+
+.textBienv{
+    color: white;
+    
+}
+.botonBienv{
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: greenyellow;
+  border-radius: 10px;
+}
+.botonBienvdos{
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: orangered;
+  border-radius: 10px;
+}
+.infooo{
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: blueviolet;
+  border-radius: 10px;
+}
+.infooo:hover{
+  background-color: blueviolet;
+ transition: 0.3s;
+  color: black;
+}
+.botonBienvdos:hover {
+  background-color: orangered;
+ transition: 0.3s;
+  color: black;
+  
+}
+.botonBienv:hover {
+  background-color: greenyellow;
+ transition: 0.3s;
+  color: black;
+  
+}
+.login{
+  
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 10px;
+}
+.infoclas{
+  background-color: rgba(255, 255, 255, 0.877);
+  border-color: black;
+}
+.infoclas:hover{
+  background-color: rgba(0, 0, 0, 0.877);
+  transition: 0.5s;
+  border-color: white;
+  color: white;
+}
